@@ -1,4 +1,13 @@
 {
+    "name": "franklynrtqu/pdo",
+    "description": "Projeto PDO Alura",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Franklyn de Quadros",
+            "email": "franklynrtqu@gmail.com"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Alura\\Pdo\\": "src/"
