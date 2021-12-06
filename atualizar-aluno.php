@@ -8,14 +8,14 @@ require_once 'vendor/autoload.php';
 
 $pdo = ConnectionCreator::createConnection();
 
-$student = new Student(null,
-    "Thábata Abati Seara",
-    new \DateTimeImmutable('1990-04-14')
+$student = new Student(
+    5,
+    "Thábata Abati Seara (Atualizado)",
+    new DateTimeImmutable('1990-04-14')
 );
 
 $studentRepository = new PdoStudentRepository();
 
 if ($studentRepository->save($student)) {
-    echo "Aluno inserido com sucesso!";
+    echo "Aluno atualizado com sucesso!";
 }
-
